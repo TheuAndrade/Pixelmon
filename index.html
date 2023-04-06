@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="backgound">
+      <div class="logo"><h3>PokeWiki</h3></div>
+      <div class="container">
+        <section class="SectionPicture">
+          <img
+            class="pokePicture"
+            id="pokePicture"
+            src="img/Poke_Ball.webp"
+            alt=""
+          />
+
+          <h2 id="pokeNameTitle"></h2>
+          <h3 id="pokemonTypeTitle"></h3>
+        </section>
+
+        <main class="pokemonInfo">
+          <div class="strongAgainst">
+            <ul id="forteCList">
+              <li class="forteC">Forte Contra</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          <h1 class="pokemonMain">POKÉDEX</h1>
+          <div class="weakAgainst">
+            <ul id="fracoCList">
+              <li class="fracoC">Fraco Contra</li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </main>
+        <div class="searchPokemon">
+          <input id="pokemonTypeArea" type="text" />
+          <input id="searchPokemonBtn" type="submit" />
+        </div>
+        <button class="xMark">X</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

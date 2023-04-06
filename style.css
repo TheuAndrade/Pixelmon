@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.backgound {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/bg.png");
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo {
+  display: none;
+  margin-top: -60px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2 {
+  padding-top: 15px;
+  display: block;
+}
+.container {
+  padding: 50px;
+  border-radius: 20px;
+  width: 400px;
+  height: 700px;
+  background-image: linear-gradient(
+    64.3deg,
+    rgba(254, 122, 152, 0.81) 17.7%,
+    rgba(255, 206, 134, 1) 64.7%,
+    rgba(172, 253, 163, 0.64) 112.1%
+  );
+  -webkit-box-shadow: 6px 11px 36px -14px rgba(0, 0, 0, 0.78);
+  -moz-box-shadow: 6px 11px 36px -14px rgba(0, 0, 0, 0.78);
+  box-shadow: 6px 11px 36px -14px rgba(0, 0, 0, 0.78);
+  position: absolute;
+}
+.pokemonInfo {
+  display: flex;
+
+  justify-content: space-around;
+}
+.pokePicture {
+  width: 200px;
+  height: 200px;
+}
+.pokeNameTitle {
+  padding-bottom: 5px;
+}
+
+ul {
+  padding-top: 50px;
+}
+ul li {
+  padding-top: 10px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.fracoC {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: red;
+  display: none;
+  padding: 5px;
+}
+.forteC {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  display: none;
+  padding: 5px;
+}
+
+.searchPokemon {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+#searchPokemonBtn {
+  margin-top: 15px;
+  padding: 10px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: none;
+}
+
+.xMark {
+  position: relative;
+  top: -640px;
+  right: -290px;
+  color: red;
+  font-size: 30px;
+  display: none;
+  font-weight: bold;
+}
+/* Midia query*/
+@media (max-width: 1400px) {
+  .container {
+    height: 600px;
+  }
+  .pokePicture {
+    width: 130px;
+    height: 130px;
+  }
+  .searchPokemon {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    margin-top: -30px;
+    height: 600px;
+  }
+}
